@@ -3,25 +3,177 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visualizador de Modelo 3D</title>
+  <title>Metal Mayhem - Official Website</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 <body>
-  <div id="canvas-container"></div>
-  <div id="loading" class="loading">Carregando modelo 3D...</div>
-  <div class="info-panel">
-    <h3>Controles:</h3>
-    <p>Mova o mouse: O modelo segue o mouse</p>
-    <p>Roda do mouse: Zoom</p>
-  </div>
+  <!-- Header -->
+  <header>
+    <div class="logo">METAL MAYHEM</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#shows">Shows</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
 
-  <!-- Bibliotecas externas -->
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>METAL MAYHEM</h1>
+      <p>Breaking boundaries since 2010</p>
+    </div>
+  </section>
+
+  <!-- About Section with 3D Model -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Metal Mayhem was formed in 2010 when five friends from São Paulo, Brazil decided to combine their passion for heavy metal with progressive elements and Brazilian rhythms.</p>
+          <p>After their groundbreaking debut album "Chaos Theory" in 2012, the band quickly gained international recognition for their technical prowess and energetic live performances.</p>
+          <p>Today, Metal Mayhem continues to push musical boundaries, blending traditional metal with experimental sounds that challenge the genre's conventions.</p>
+          <p>With three platinum albums and worldwide tours, the band remains committed to creating music that resonates with fans while exploring new sonic territories.</p>
+        </div>
+        <div id="canvas-container" class="model-container">
+          <div id="loading" class="loading">Carregando modelo 3D...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shows Section -->
+  <section id="shows" class="shows">
+    <div class="container">
+      <h2>Upcoming Shows</h2>
+      <div class="shows-carousel">
+        <div class="show-card">
+          <div class="show-date">
+            <span class="day">15</span>
+            <span class="month">MAR</span>
+          </div>
+          <div class="show-info">
+            <h3>Rio de Janeiro, Brazil</h3>
+            <p>Maracanã Stadium</p>
+            <a href="#" class="btn">Get Tickets</a>
+          </div>
+        </div>
+        <div class="show-card">
+          <div class="show-date">
+            <span class="day">22</span>
+            <span class="month">MAR</span>
+          </div>
+          <div class="show-info">
+            <h3>São Paulo, Brazil</h3>
+            <p>Allianz Parque</p>
+            <a href="#" class="btn">Get Tickets</a>
+          </div>
+        </div>
+        <div class="show-card">
+          <div class="show-date">
+            <span class="day">05</span>
+            <span class="month">APR</span>
+          </div>
+          <div class="show-info">
+            <h3>Buenos Aires, Argentina</h3>
+            <p>Luna Park Stadium</p>
+            <a href="#" class="btn">Get Tickets</a>
+          </div>
+        </div>
+        <div class="show-card">
+          <div class="show-date">
+            <span class="day">12</span>
+            <span class="month">APR</span>
+          </div>
+          <div class="show-info">
+            <h3>Santiago, Chile</h3>
+            <p>Movistar Arena</p>
+            <a href="#" class="btn">Get Tickets</a>
+          </div>
+        </div>
+        <div class="show-card">
+          <div class="show-date">
+            <span class="day">26</span>
+            <span class="month">APR</span>
+          </div>
+          <div class="show-info">
+            <h3>Mexico City, Mexico</h3>
+            <p>Foro Sol</p>
+            <a href="#" class="btn">Get Tickets</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Management</h3>
+          <p>Email: management@metalmayhem.com</p>
+          <p>Phone: +55 11 1234-5678</p>
+          
+          <h3>Booking</h3>
+          <p>Email: booking@metalmayhem.com</p>
+          <p>Phone: +55 11 8765-4321</p>
+        </div>
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">METAL MAYHEM</div>
+        <div class="social-links">
+          <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 Metal Mayhem. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   
-  <!-- Arquivo JavaScript principal -->
-  <script src="script.js"></script>
+  <script src="js/animation.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
