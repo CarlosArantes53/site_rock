@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizador de Modelo 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="canvas-container"></div>
+  <div id="loading" class="loading">Carregando modelo 3D...</div>
+  <div class="info-panel">
+    <h3>Controles:</h3>
+    <p>Mova o mouse: O modelo segue o mouse</p>
+    <p>Roda do mouse: Zoom</p>
+  </div>
+
+  <!-- Bibliotecas externas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+  
+  <!-- Arquivo JavaScript principal -->
+  <script src="script.js"></script>
+</body>
+</html>
